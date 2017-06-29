@@ -1,0 +1,64 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.4.RELEASE")
+  }
+}
+
+apply plugin: "java"
+apply plugin: "spring-boot"
+apply plugin: "eclipse"
+
+compileJava.options.encoding = 'UTF-8'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+eclipse {
+  classpath {
+    containers "org.springsource.ide.eclipse.gradle.classpathcontainer"
+  }
+}
+
+jar {
+  baseName = "spring-boot-hello-world"
+  version =  "0.0.1-SNAPSHOT"
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile("org.springframework.boot:spring-boot-starter-web")
+
+  // https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter
+  compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.3.0'
+  // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+  compile group: 'mysql', name: 'mysql-connector-java'
+  //DBCP:DataBase Connection Pooling
+  // https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2
+  compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.1'
+  // https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter
+  compile group: 'com.github.pagehelper', name: 'pagehelper-spring-boot-starter', version: '1.1.1'
+
+
+  testCompile("org.springframework.boot:spring-boot-starter-test")
+
+  // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-amqp', version: '1.5.4.RELEASE'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '1.5.4.RELEASE'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '1.5.4.RELEASE'
+	compile group: 'org.springframework', name: 'spring-context-support', version: '4.3.9.RELEASE'
+	// https://mvnrepository.com/artifact/javax.mail/javax.mail-api
+	// https://mvnrepository.com/artifact/com.sun.mail/javax.mail
+	compile group: 'com.sun.mail', name: 'javax.mail', version: '1.6.0-rc2'
+	// https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.6'
+	// https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils
+	compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
+
+
+}

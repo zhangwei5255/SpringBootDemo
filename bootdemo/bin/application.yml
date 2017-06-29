@@ -1,0 +1,28 @@
+#共通
+
+#指定bean所在包
+#指定映射文件
+mybatis:
+  type-aliases-package: bootdemo.hello.model
+  config-locations: classpath:mybatis/mybatis-config.xml
+  mapperLocations: classpath:bootdemo/hello/sqlmap/base/*.xml
+
+# spring.profiles.activeにアクティブなプロファイルを指定する
+spring:
+  profiles:
+    active: dev
+
+# "---"でプロファイルを区切る
+# spring.profilesにプロファイル名を書く
+---
+#「開発環境」
+spring:
+  profiles: dev
+---
+#「テスト環境」
+spring:
+  profiles: test
+---
+#「本番環境」
+spring:
+  profiles: production
