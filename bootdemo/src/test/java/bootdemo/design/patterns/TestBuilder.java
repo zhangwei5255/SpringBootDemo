@@ -10,6 +10,7 @@ public class TestBuilder {
 	        Builder builder = new LenovoBuilder();
 	        Director director = new Director(builder);
 	        director.construct();
+
 	        Computer computer = builder.retrieveResult();
 	        System.out.println(computer.getHost());
 	        System.out.println(computer.getDisplay());
