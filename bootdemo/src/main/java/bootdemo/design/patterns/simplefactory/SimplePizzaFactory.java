@@ -2,9 +2,9 @@ package bootdemo.design.patterns.simplefactory;
 
 import org.springframework.beans.BeanUtils;
 
-import bootdemo.design.patterns.factory.CheesePizza;
-import bootdemo.design.patterns.factory.GreekPizza;
-import bootdemo.design.patterns.factory.Pizza;
+import bootdemo.design.patterns.factory.product.CheesePizza;
+import bootdemo.design.patterns.factory.product.GreekPizza;
+import bootdemo.design.patterns.factory.product.Pizza;
 
 public class SimplePizzaFactory {
 

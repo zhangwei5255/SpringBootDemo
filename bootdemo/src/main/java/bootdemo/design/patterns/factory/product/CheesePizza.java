@@ -1,4 +1,4 @@
-package bootdemo.design.patterns.factory;
+package bootdemo.design.patterns.factory.product;
 
 public class CheesePizza extends Pizza {
 	public void prepare() {

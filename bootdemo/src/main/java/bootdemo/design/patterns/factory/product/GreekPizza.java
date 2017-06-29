@@ -1,4 +1,4 @@
-package bootdemo.design.patterns.factory;
+package bootdemo.design.patterns.factory.product;
 
 public class GreekPizza extends Pizza {
 	public void prepare() {

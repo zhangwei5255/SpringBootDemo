@@ -1,7 +1,7 @@
 package bootdemo.design.patterns.methodfactory;
 
-import bootdemo.design.patterns.factory.GreekPizza;
-import bootdemo.design.patterns.factory.Pizza;
+import bootdemo.design.patterns.factory.product.GreekPizza;
+import bootdemo.design.patterns.factory.product.Pizza;
 
 public class GreekPizzaFactory  implements PizzaFactory{
     @Override

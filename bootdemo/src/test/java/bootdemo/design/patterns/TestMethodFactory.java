@@ -1,6 +1,6 @@
 package bootdemo.design.patterns;
 
-import bootdemo.design.patterns.factory.Pizza;
+import bootdemo.design.patterns.factory.product.Pizza;
 import bootdemo.design.patterns.methodfactory.CheesePizzaFactory;
 import bootdemo.design.patterns.methodfactory.GreekPizzaFactory;
 import bootdemo.design.patterns.methodfactory.PizzaFactory;
