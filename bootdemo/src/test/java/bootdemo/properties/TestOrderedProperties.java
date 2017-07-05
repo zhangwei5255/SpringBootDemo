@@ -41,5 +41,13 @@ public class TestOrderedProperties {
 		for(Map.Entry<Object,Object> k : kk){
 			System.out.println(k.getKey());
 		}
+
+		System.out.println("----------------------------------------------------------------");
+
+		for(Object key : props.keySet()){
+			System.out.println(key);
+		}
+
+
     }
 }

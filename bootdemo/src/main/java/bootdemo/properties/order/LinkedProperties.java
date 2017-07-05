@@ -34,6 +34,10 @@ public class LinkedProperties extends Properties {
 	}
 
 	@Override
+	public Set<Object> keySet(){
+		return linkMap.keySet();
+	}
+	@Override
 	public Set<java.util.Map.Entry<Object, Object>> entrySet() {
 		return linkMap.entrySet();
 	}
