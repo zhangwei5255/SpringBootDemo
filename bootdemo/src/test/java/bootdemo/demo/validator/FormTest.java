@@ -15,6 +15,25 @@ public class FormTest {
 
     @Test
     public void validate_単項目チェックでエラー() {
+
+    /*
+     @Autowired
+     private Validator validator;
+     @Override
+    	    public Person process(Person item) throws Exception {
+    	        DataBinder binder = new DataBinder(item);
+    	        binder.setValidator(validator);
+    	        binder.validate();
+    	        BindingResult result = binder.getBindingResult();
+
+    	        if (result.hasErrors()) {
+    	            log.warn(item.toString());
+    	            result.getAllErrors().forEach(s -> log.warn(s.toString()));
+    	            return null; // ItemProcessorでnullを返すと後続のWriterで処理されない
+    	        }
+
+    	        return item;
+    	    }*/
         Form form = new Form();
 
 
