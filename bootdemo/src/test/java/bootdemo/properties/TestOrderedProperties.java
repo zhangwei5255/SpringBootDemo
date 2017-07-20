@@ -36,6 +36,7 @@ public class TestOrderedProperties {
     	Properties props = new LinkedProperties();
     	//Properties props = new OrderedProperties();
 		props.load(new FileInputStream("C:/Users/zhang/git/SpringBootDemo/bootdemo/src/main/resources/ErrorResources.properties"));
+		props.load(new FileInputStream("C:/Users/zhang/git/SpringBootDemo/bootdemo/src/main/resources/ErrorResources2.properties"));
 		Set<Map.Entry<Object,Object>> kk = props.entrySet();
 
 		for(Map.Entry<Object,Object> k : kk){
