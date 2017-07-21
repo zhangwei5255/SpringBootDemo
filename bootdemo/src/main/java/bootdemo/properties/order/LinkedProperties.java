@@ -13,6 +13,11 @@ public class LinkedProperties extends Properties {
 	private Map<Object, Object> linkMap = new LinkedHashMap<Object, Object>();
 
 	@Override
+    public String getProperty(String key) {
+        return (String)linkMap.get((String)key) ;
+    }
+
+	@Override
 	public synchronized Object put(Object key, Object value) {
 		return linkMap.put(key, value);
 	}
