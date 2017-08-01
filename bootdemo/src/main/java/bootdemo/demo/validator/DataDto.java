@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 
 public class DataDto implements Serializable {
 
-	@NotNull
+	@NotNull(message="{form.addresses.NotNull.message}")
 	@Size(min = 1, max = 100)
 	private String address;
 
